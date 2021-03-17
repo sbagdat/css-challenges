@@ -75,7 +75,6 @@ aside {
   .container {
     display: grid;
     width: 100vw;
-    /*grid-template-rows: repeat(auto-fill, 1fr);*/
     height: 80vh;
     grid-template-columns: repeat(2, 1fr);
   }
