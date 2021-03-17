@@ -2,9 +2,15 @@
 
 Create compositions for small, medium and large screens using media queries.
 
-![](images/comp1-large.png | width=400)
+## For Large Screens
 
-![](images/comp1-medium.png | width=300)
+![](images/comp1-large.png)
 
-![](images/comp1-small.png | width=200)
+## For Medium Screens
+
+![](images/comp1-medium.png)
+
+## For Small Screens
+
+![](images/comp1-small.png)
 
