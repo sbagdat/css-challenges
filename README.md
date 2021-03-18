@@ -9,3 +9,4 @@
 
 ## Responsive Layout Challenges
 * [Challenge #1](https://github.com/sbagdat/css-challenges/tree/main/responsive/challenge01)
+* [Challenge #2](https://github.com/sbagdat/css-challenges/tree/main/responsive/challenge02)
