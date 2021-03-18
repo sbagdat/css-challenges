@@ -1,0 +1,101 @@
+:root {
+  --dark-color: rgb(41, 44, 63);
+  --light-color: rgba(81, 136, 198, 0.6);
+}
+
+body {
+  background-color: var(--dark-color);
+  margin: 0;
+  font-size: 20px;
+  color: #eee;
+}
+
+div:not(.outer-container),
+article {
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+header div,
+aside div,
+footer div,
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-container,
+header,
+.middle-container,
+aside,
+main,
+footer {
+  display: grid;
+}
+
+header,
+footer,
+main,
+aside {
+  padding: 20px;
+}
+
+header,
+footer,
+aside div {
+  background-color: var(--dark-color);
+}
+
+header div,
+footer div,
+aside,
+article {
+  background-color: var(--light-color);
+}
+
+header,
+footer,
+main {
+  column-gap: 10px;
+}
+
+aside,
+main {
+  row-gap: 10px;
+}
+
+.outer-container {
+  height: 100vh;
+  grid-template: 150px auto 150px / 1fr;
+}
+
+header {
+  align-content: center;
+  grid-template: 110px / 110px auto repeat(2, 110px);
+}
+
+header div:nth-child(2) {
+  grid-column-start: 3;
+}
+
+.middle-container {
+  grid-template: 1fr / 200px 1fr;
+}
+
+aside {
+  border-right: 1px dashed rgba(255, 255, 255, 0.5);
+  grid-template: repeat(auto-fill, 100px) / 1fr;
+}
+
+main {
+  grid-template: repeat(auto-fill, 1fr) / repeat(2, 1fr);
+}
+
+main article:nth-child(3n+1) {
+  grid-column-end: span 2;
+}
+
+footer {
+  justify-content: center;
+  grid-template: 1fr / repeat(5, 110px);
+}
