@@ -1,0 +1,74 @@
+:root {
+  --dark-color: rgb(41, 44, 63);
+  --light-color: rgba(81, 136, 198, 0.6);
+}
+
+body {
+  background-color: var(--dark-color);
+  color: #fff;
+  margin: 0;
+  font-size: 24px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer-container > *,
+div { border: 1px dashed rgba(255, 255, 255, 0.5); }
+
+* { margin: 0; }
+
+.top,
+.bottom,
+.middle div { background-color: var(--light-color); }
+
+.middle,
+.top div,
+.bottom div {
+  background-color: var(--dark-color);
+}
+
+.outer-container,
+.top,
+.top section,
+.middle,
+.bottom,
+.bottom section { display: grid; }
+
+.middle,
+.bottom {
+  padding: 20px;
+  column-gap: 10px;
+}
+
+.outer-container {
+  height: 100vh;
+  grid-template-rows: 1fr 100px 1fr;
+}
+
+.top { grid-template-columns: repeat(3, 1fr); }
+.top section {
+  padding: 20px;
+}
+
+.top section:not(:last-child) {
+  border-right: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
+.top section,
+.bottom section {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  row-gap: 10px;
+}
+
+.row-span-3{ grid-row-end: span 3; }
+.row-span-4{ grid-row-end: span 4; }
+.row-span-5{ grid-row-end: span 5; }
+.row-span-6{ grid-row-end: span 6; }
+
+.middle { grid-template-columns: repeat(4, 1fr); }
+.bottom { grid-template-columns: repeat(2, 1fr); }
