@@ -1,4 +1,4 @@
-# Grid Challenge #1
+# Grid Challenge #2
 
 Recreate this composition using grid.
 
