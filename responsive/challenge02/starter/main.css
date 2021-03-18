@@ -1,0 +1,50 @@
+:root {
+  --header-bg: #483d8a;
+  --section-a-bg: #292c3f;
+  --section-b-bg: #a541b8;
+  --section-c-bg: #009284;
+  --white: #eee;
+}
+
+html {
+  color: var(--white);
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+header,
+.section-a,
+.section-b,
+.section-c,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header,
+footer {
+  background-color: var(--header-bg);
+}
+
+.section-a {
+  background-color: var(--section-a-bg);
+}
+
+.section-b {
+  background-color: var(--section-b-bg);
+}
+
+.section-c {
+  background-color: var(--section-c-bg);
+}
