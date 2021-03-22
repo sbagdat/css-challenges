@@ -1,5 +1,7 @@
 # CSS Challenges
 
+Educational purposed css challenges. 
+
 ## Grid Challenges
 * [Challenge #1](https://github.com/sbagdat/css-challenges/tree/main/grid/challenge01)
 * [Challenge #2](https://github.com/sbagdat/css-challenges/tree/main/grid/challenge02)
