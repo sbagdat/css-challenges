@@ -1,6 +1,6 @@
 # CSS Challenges
 
-Educational purposed css challenges. 
+Educational purposes css challenges. 
 
 ## Grid Challenges
 * [Challenge #1](https://github.com/sbagdat/css-challenges/tree/main/grid/challenge01)
